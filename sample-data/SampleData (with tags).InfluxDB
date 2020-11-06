@@ -1,3 +1,12 @@
+[lokesh@myhost ~]$ influx
+Connected to http://localhost:8086 version 1.7.7
+InfluxDB shell version: 1.7.7
+> 
+> use testdb
+Using database testdb
+> 
+> select * from ramusage limit 40
+name: ramusage
 time                architecture hanacommitted hanaexcess hanaramusage host   installed mtm      os    oscache osfree ostotal osused serial_no
 ----                ------------ ------------- ---------- ------------ ----   --------- ---      --    ------- ------ ------- ------ ---------
 1604001415397478510 ppc64le      47662         11393      59055        myhost 131072    9119-MME Linux 11606   7733   130679  111339 02111A11A
