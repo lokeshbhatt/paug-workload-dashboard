@@ -14,6 +14,21 @@ Proposed frame work is primarily comprises of 3 stages,
 2. Data Ingestion: Ingesting data generated at end point into centrally hosted time-series database (influxDB).
 3. Data Visualization: Visualizing ingested data points using centrally hosted Grafana dashboars.
 ![Alt text](https://github.com/lokeshbhatt/shana/blob/main/SHANA%20-%20Technical%20Framework.JPG "SHANA - Technical Framework")
-
-
+#
+#
+# Case presented: Capturing, monitoring and metering dashabord for HANA workload 
+#
+#
+# Technology Stack
+### At each LPAR hosting HANA DB
+- SAP HANA Instance
+- /bin/bash
+- SUSE Linux Enterprise Server 15 (ppc64le)
+- [nmeasure_linux_ppc64le](https://sourceforge.net/projects/nmon/files/nmeasure_linux_v3.zip/download): Thanks to [Nigel Griffiths](https://www.linkedin.com/in/nigelargriffiths/) for creating this helpful utility for pushing data into InfluxDB and it works like a charm !
+#
+#
+### At central dashboard hosting server
+- OS: RHELRed Hat Enterprise Linux 7.7 (Maipo)
+- InfluxDB version: 1.7.7
+- Grafana: v6.2.5
 Grafana dashboard can be downloaded from [paug-workload-dashboard-ramstat](https://grafana.com/grafana/dashboards/13366)
