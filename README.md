@@ -17,7 +17,7 @@ Proposed frame work is primarily comprises of 3 stages,
 #
 #
 # Case presented
-- Capturing excess memory usage over user defined threshold for HANA workload
+- Capturing excess memory usage over and above user defined threshold for HANA workload
 - Dashboard for monitoring, metering & billing excess memory usage for user defined interval
 #
 #
@@ -28,9 +28,37 @@ Proposed frame work is primarily comprises of 3 stages,
 - SUSE Linux Enterprise Server 15 (ppc64le)
 - [nmeasure_linux_ppc64le](https://sourceforge.net/projects/nmon/files/nmeasure_linux_v3.zip/download): Thanks to [Nigel Griffiths](https://www.linkedin.com/in/nigelargriffiths/) for creating this helpful utility for pushing data into InfluxDB and it works like a charm !
 #
-#
 ### At central dashboard hosting server
 - OS: RHELRed Hat Enterprise Linux 7.7 (Maipo)
 - InfluxDB version: 1.7.7
 - Grafana: v6.2.5
-Grafana dashboard can be downloaded from [paug-workload-dashboard-ramstat](https://grafana.com/grafana/dashboards/13366)
+#
+#
+# Terminolgies
+- architecture: systems architecture details (x86, ppc64le etc.)
+- mtm: machine type model of physical server
+- serial_no: serial no of physical server
+- host: hostnam
+- os: operating system of host
+- oscache: operating system file cache
+- osfree: unused memory (MemFree and SwapFree in /proc/meminfo)
+- ostotal: total installed memory
+- osused: used memory (calculated as total - free - buffers - cache)
+- hanacommitted: comitted memory usage for hana workload
+- hanaexcesss: excess ram usage by hana workload
+- hanaramusage: total ram usage by hana workload
+#
+#
+#
+#
+# Steps to setup
+1. Complete [HANA & OS user setup for compute monitoring](https://github.com/lokeshbhatt/shana/blob/main/UserSetup.md) at each LPAR hosting HANA DB
+2. Copy "collector.sh" & "nmeasure_linux_ppc64le" to USER1 home directory
+3. Assign executable permission to both [chmod u+x collector.sh nmeasure_linux_ppc64le]
+4. Move "nmeasure_linux_ppc64le" as "nmeasure" to bin in your PATH [mv measure_linux_ppc64le /home/USER1/bin/nmeasure]
+5. Make following crontab entry with "crontab -e" command [00 00 * * * /home/lokesh/collector.sh 1 60 > /home/lokesh/collector.log 2>&1]
+#
+#
+References
+1. [SAP HANA Memory Usage Explained](https://www.sap.com/documents/2016/08/205c8299-867c-0010-82c7-eda71af511fa.html)
+2. Grafana dashboard for [paug-workload-dashboard-ramstat](https://grafana.com/grafana/dashboards/13366)
