@@ -1,7 +1,7 @@
 # Pay-as-you-go (paug-workload-dashboard) dashboarding framework for workload specific compute usage monitoring using open source technologies 
 #
 #
-# Business requirement(s)
+# Requirement
 1. Compute resource consumption monitoring & metering for pay-as-you-go model.
 2. Resource consumption to be measured at workload level and not at operating systems level.
 3. Capability to capture excess resource consumption at user defined interval.
