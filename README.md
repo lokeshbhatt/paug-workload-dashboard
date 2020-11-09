@@ -49,14 +49,18 @@ Proposed frame work is primarily comprises of 3 stages,
 - hanaramusage: total ram usage by hana workload
 #
 #
+# Step-1: Setting up centrally hosted influxDB
 #
 #
-# Steps to setup
+# Step-2: Setting up end point "data collection" & "ingestion" to influxDB
 1. Complete [HANA & OS user setup for compute monitoring](https://github.com/lokeshbhatt/shana/blob/main/UserSetup.md) at each LPAR hosting HANA DB
 2. Copy "collector.sh" & "nmeasure_linux_ppc64le" to USER1 home directory
 3. Assign executable permission to both [chmod u+x collector.sh nmeasure_linux_ppc64le]
 4. Move "nmeasure_linux_ppc64le" as "nmeasure" to bin in your PATH [mv measure_linux_ppc64le /home/USER1/bin/nmeasure]
 5. Make following crontab entry with "crontab -e" command [00 00 * * * /home/lokesh/collector.sh 1 60 > /home/lokesh/collector.log 2>&1]
+#
+#
+# Step-3: Setting up "data visualization"
 #
 #
 References
