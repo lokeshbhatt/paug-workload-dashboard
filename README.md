@@ -16,7 +16,9 @@ Proposed frame work is primarily comprises of 3 stages,
 ![Alt text](https://github.com/lokeshbhatt/shana/blob/main/SHANA%20-%20Technical%20Framework.JPG "SHANA - Technical Framework")
 #
 #
-# Case presented: Capturing, monitoring and metering dashabord for HANA workload 
+# Case presented
+- Capturing excess memory usage over user defined threshold for HANA workload
+- Dashboard for monitoring, metering & billing excess memory usage for user defined interval
 #
 #
 # Technology Stack
