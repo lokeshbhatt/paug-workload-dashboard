@@ -70,5 +70,6 @@ OR
 #
 #
 References
-1. [SAP HANA Memory Usage Explained](https://www.sap.com/documents/2016/08/205c8299-867c-0010-82c7-eda71af511fa.html)
-2. Grafana dashboard for [paug-workload-dashboard-ramstat](https://grafana.com/grafana/dashboards/13366)
+- [SAP HANA Memory Usage Explained](https://www.sap.com/documents/2016/08/205c8299-867c-0010-82c7-eda71af511fa.html)
+- [M_HOST_RESOURCE_UTILIZATION Table](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/2.0.03/en-US/20b12419751910148afa9303eec370a0.html)
+- Grafana dashboard for [paug-workload-dashboard-ramstat](https://grafana.com/grafana/dashboards/13366)
