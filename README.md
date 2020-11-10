@@ -59,11 +59,11 @@ OR
 #
 # Step-2: Setting up end point "data collection" & "ingestion" to influxDB
 - Complete [HANA & OS user setup for compute monitoring](https://github.com/lokeshbhatt/paug-workload-dashboard/blob/main/UserSetup.md) at each LPAR hosting HANA DB
-- Download collector script, "collector.sh"
-- Download & "nmeasure_linux_ppc64le" to USER1 home directory
+- Download collector script, [collector.sh](https://github.com/lokeshbhatt/paug-workload-dashboard/blob/main/collector.sh)
+- Download [nmeasure_linux_ppc64le](https://sourceforge.net/projects/nmon/files/nmeasure_linux_v3.zip/download) to USER1 home directory
 - Assign executable permission to both [chmod u+x collector.sh nmeasure_linux_ppc64le]
-- Move "nmeasure_linux_ppc64le" as "nmeasure" to bin in your PATH [mv measure_linux_ppc64le /home/USER1/bin/nmeasure]
-- Make following crontab entry with "crontab -e" command [00 00 * * * /home/lokesh/collector.sh 1 60 > /home/lokesh/collector.log 2>&1]
+- Move "nmeasure_linux_ppc64le" as "nmeasure" to bin in your PATH [command: mv measure_linux_ppc64le /home/USER1/bin/nmeasure]
+- Make crontab entry with "crontab -e" command [crontab entry: 00 00 * * * /home/lokesh/collector.sh 1 60 > /home/lokesh/collector.log 2>&1]
 #
 #
 # Step-3: Setting up "data visualization"
