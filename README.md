@@ -63,10 +63,18 @@ OR
 - Download [nmeasure_linux_ppc64le](https://sourceforge.net/projects/nmon/files/nmeasure_linux_v3.zip/download) to USER1 home directory
 - Assign executable permission to both [chmod u+x collector.sh nmeasure_linux_ppc64le]
 - Move "nmeasure_linux_ppc64le" as "nmeasure" to bin in your PATH [command: mv measure_linux_ppc64le /home/USER1/bin/nmeasure]
-- Make crontab entry with "crontab -e" command [crontab entry: 00 00 * * * /home/lokesh/collector.sh 1 60 > /home/lokesh/collector.log 2>&1]
+- Make crontab entry with "crontab -e" command [crontab entry: 00 00 * * * /home/USER1/collector.sh 1 60 > /home/USER1/collector.log 2>&1]
+#
+#
+### Post completing step-1 & step-2, it would start populating data into InfluxDB and we are ready setting up data visualization 
 #
 #
 # Step-3: Setting up "data visualization"
+- Refer [this useful post](https://www.power-devops.com/post/installing-grafana-on-ibm-power-systems) for installing Grafana on IBM Power server systems
+OR
+- Refer [Grafana portal](https://grafana.com/docs/grafana/latest/installation/) for installing Grafana on x86 server systems
+- Login to Grafana [http://<Grafana_Server_IP>:3000/]
+- Import Grafana dashboard for [paug-workload-dashboard-ramstat](https://grafana.com/grafana/dashboards/13366) using [steps listed here](https://grafana.com/docs/grafana/latest/dashboards/export-import/)
 #
 #
 References
