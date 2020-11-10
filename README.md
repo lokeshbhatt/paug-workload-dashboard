@@ -18,7 +18,7 @@ Proposed frame work is primarily comprises of 3 stages,
 #
 # Demonstrated use case
 - Capturing excess memory usage over and above user defined threshold for HANA workload
-- Dashboard for monitoring, metering & billing excess memory usage for user defined interval
+- Dashboard for monitoring, metering & billing excess memory usage at user defined interval
 #
 #
 # Technology Stack
@@ -50,7 +50,8 @@ Proposed frame work is primarily comprises of 3 stages,
 #
 #
 # Step-1: Setting up centrally hosted influxDB
-#
+- To download and install influxDB on IBM POWER servers (ppc64le) you are 
+- Here is a [useful post](https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power Systems
 #
 # Step-2: Setting up end point "data collection" & "ingestion" to influxDB
 1. Complete [HANA & OS user setup for compute monitoring](https://github.com/lokeshbhatt/shana/blob/main/UserSetup.md) at each LPAR hosting HANA DB
