@@ -1,6 +1,5 @@
 # Steps for enabling operating system level user's read only access to M_HOST_RESOURCE_UTILIZATION System View
 #
-### Tested & documented by [Lokesh Bhatt](https://www.linkedin.com/in/lokesh-bhatt-796a2ab/)
 ### Special thanks to [Sanjeev Kumar](https://www.linkedin.com/in/sanjeev-kumar-5328a723/) for HANA DB expertise contribution.
 #
 ### 1. Create an OS user "USER1" [via Suse yast]
