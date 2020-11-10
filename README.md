@@ -34,7 +34,7 @@ Proposed frame work is primarily comprises of 3 stages,
 - Grafana: v6.2.5
 #
 #
-# Terminolgies
+# Terminologies
 - architecture: systems architecture details (x86, ppc64le etc.)
 - mtm: machine type model of physical server
 - serial_no: serial no of physical server
@@ -50,8 +50,11 @@ Proposed frame work is primarily comprises of 3 stages,
 #
 #
 # Step-1: Setting up centrally hosted influxDB
-- Please refer [this useful post](https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power server systems
-- Please refer [InfluxDB portal](https://docs.influxdata.com/influxdb/v1.8/introduction/install/) for installing InfluxDB on x86 server systems
+1(a). Refer [this useful post](https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power server systems
+                                                                      OR
+1(b). Refer [InfluxDB portal](https://docs.influxdata.com/influxdb/v1.8/introduction/install/) for installing InfluxDB on x86 server systems
+2. Login to newly installed influxDB  [command: "influx"]
+3. Create a new database named testdb [command: "create database testdb"]
 #
 #
 # Step-2: Setting up end point "data collection" & "ingestion" to influxDB
