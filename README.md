@@ -50,8 +50,8 @@ Proposed frame work is primarily comprises of 3 stages,
 #
 #
 # Step-1: Setting up centrally hosted influxDB
-- Please refer [this useful post] (https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power server systems
-- Please refer [InfluxDB portal] (https://docs.influxdata.com/influxdb/v1.8/introduction/install/) for installing InfluxDB on x86 server systems
+- Please refer [this useful post](https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power server systems
+- Please refer [InfluxDB portal](https://docs.influxdata.com/influxdb/v1.8/introduction/install/) for installing InfluxDB on x86 server systems
 #
 #
 # Step-2: Setting up end point "data collection" & "ingestion" to influxDB
