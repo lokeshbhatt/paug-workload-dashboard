@@ -50,8 +50,9 @@ Proposed frame work is primarily comprises of 3 stages,
 #
 #
 # Step-1: Setting up centrally hosted influxDB
-- To download and install influxDB on IBM POWER servers (ppc64le) you are 
-- Here is a [useful post](https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power Systems
+- Please refer [this useful post] (https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power server systems
+- Please refer [InfluxDB portal] (https://docs.influxdata.com/influxdb/v1.8/introduction/install/) for installing InfluxDB on x86 server systems
+#
 #
 # Step-2: Setting up end point "data collection" & "ingestion" to influxDB
 1. Complete [HANA & OS user setup for compute monitoring](https://github.com/lokeshbhatt/shana/blob/main/UserSetup.md) at each LPAR hosting HANA DB
