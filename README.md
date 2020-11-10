@@ -13,7 +13,7 @@ Proposed frame work is primarily comprises of 3 stages,
 1. Data Generation: Generated at end points / hosts, using custom created collector script(s).
 2. Data Ingestion: Ingesting data generated at end point into centrally hosted time-series database (influxDB).
 3. Data Visualization: Visualizing ingested data points using centrally hosted Grafana dashboars.
-![Alt text](https://github.com/lokeshbhatt/shana/blob/main/SHANA%20-%20Technical%20Framework.JPG "SHANA - Technical Framework")
+![Alt text](https://github.com/lokeshbhatt/paug-workload-dashboard/blob/main/SHANA%20-%20Technical%20Framework.jpg "SHANA - Technical Framework")
 #
 #
 # Demonstrated use case
@@ -78,7 +78,7 @@ OR
 - Optionally Customize "name"
 - Select your InfluxDB name from dropdown next to "InfluxDB-1"
 - Click on dashboard name to load
-- ![Alt text](https://github.com/lokeshbhatt/paug-workload-dashboard/blob/main/paug-workload-dashboard-ramstat-0.0.JPG "paug-workload-dashboard-ramstat")
+![Alt text](https://github.com/lokeshbhatt/paug-workload-dashboard/blob/main/paug-workload-dashboard-ramstat-0.0.JPG "paug-workload-dashboard-ramstat")
 #
 #
 References
