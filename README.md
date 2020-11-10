@@ -75,6 +75,10 @@ OR
 - Refer [Grafana portal](https://grafana.com/docs/grafana/latest/installation/) for installing Grafana on x86 server systems
 - Login to Grafana [http://<Grafana_Server_IP>:3000/]
 - Import Grafana dashboard for [paug-workload-dashboard-ramstat](https://grafana.com/grafana/dashboards/13366) using [steps listed here](https://grafana.com/docs/grafana/latest/dashboards/export-import/)
+- Optionally Customize "name"
+- Select your InfluxDB name from dropdown next to "InfluxDB-1"
+- Click on dashboard name to load
+- ![Alt text](https://github.com/lokeshbhatt/paug-workload-dashboard/blob/main/paug-workload-dashboard-ramstat-0.0.JPG "paug-workload-dashboard-ramstat")
 #
 #
 References
