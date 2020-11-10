@@ -50,19 +50,20 @@ Proposed frame work is primarily comprises of 3 stages,
 #
 #
 # Step-1: Setting up centrally hosted influxDB
-1(a). Refer [this useful post](https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power server systems
-                                                                      OR
-1(b). Refer [InfluxDB portal](https://docs.influxdata.com/influxdb/v1.8/introduction/install/) for installing InfluxDB on x86 server systems
-2. Login to newly installed influxDB  [command: "influx"]
-3. Create a new database named testdb [command: "create database testdb"]
+- Refer [this useful post](https://www.power-devops.com/post/influxdb-on-ibm-power-systems) for installing InfluxDB on IBM Power server systems
+OR
+- Refer [InfluxDB portal](https://docs.influxdata.com/influxdb/v1.8/introduction/install/) for installing InfluxDB on x86 server systems
+- Login to newly installed influxDB  [command: "influx"]
+- Create a new database named testdb [command: "create database testdb"]
 #
 #
 # Step-2: Setting up end point "data collection" & "ingestion" to influxDB
-1. Complete [HANA & OS user setup for compute monitoring](https://github.com/lokeshbhatt/shana/blob/main/UserSetup.md) at each LPAR hosting HANA DB
-2. Copy "collector.sh" & "nmeasure_linux_ppc64le" to USER1 home directory
-3. Assign executable permission to both [chmod u+x collector.sh nmeasure_linux_ppc64le]
-4. Move "nmeasure_linux_ppc64le" as "nmeasure" to bin in your PATH [mv measure_linux_ppc64le /home/USER1/bin/nmeasure]
-5. Make following crontab entry with "crontab -e" command [00 00 * * * /home/lokesh/collector.sh 1 60 > /home/lokesh/collector.log 2>&1]
+- Complete [HANA & OS user setup for compute monitoring](https://github.com/lokeshbhatt/paug-workload-dashboard/blob/main/UserSetup.md) at each LPAR hosting HANA DB
+- Download collector script, "collector.sh"
+- Download & "nmeasure_linux_ppc64le" to USER1 home directory
+- Assign executable permission to both [chmod u+x collector.sh nmeasure_linux_ppc64le]
+- Move "nmeasure_linux_ppc64le" as "nmeasure" to bin in your PATH [mv measure_linux_ppc64le /home/USER1/bin/nmeasure]
+- Make following crontab entry with "crontab -e" command [00 00 * * * /home/lokesh/collector.sh 1 60 > /home/lokesh/collector.log 2>&1]
 #
 #
 # Step-3: Setting up "data visualization"
