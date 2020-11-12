@@ -1,4 +1,4 @@
-# Pay-as-you-go (paug-workload-dashboard) dashboarding framework for workload specific resource usage metering, monitoring & billing using open source technologies 
+# Pay-as-you-go (paug-workload-dashboard) dashboarding framework for workload specific resource usage metering & monitoring using open source technologies 
 #
 #
 # Requirement
